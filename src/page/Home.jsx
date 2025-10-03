@@ -5,6 +5,7 @@ import SparkleButton from '../components/SparkleButton'
 import About from '../components/About'
 import { Minus } from 'lucide-react'
 import Contact from '../components/Contact'
+import WorkExperience from '../components/WorkExperience'
 
 
 const Home = () => {
@@ -15,7 +16,9 @@ const Home = () => {
         <Hero/>
         
         <About/>
+        <WorkExperience/>
         <Contact/>
+        
         
     </div>
   )
