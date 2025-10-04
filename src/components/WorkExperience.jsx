@@ -1,5 +1,6 @@
 import { BriefcaseBusiness } from "lucide-react";
 import React from "react";
+import SparkleButton from "./SparkleButton";
 
 const WorkExperience = () => {
   return (
@@ -30,7 +31,10 @@ const WorkExperience = () => {
           {/* Right Side */}
           <div className="w-1/2 pl-8">
             <p className="text-gray-700 font-medium">
-              Tech Used: React, Node.js, AWS, Docker
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium  ">
+                <span>Tech Used: React, Node.js, AWS, Docker</span>
+              </div>
+              
             </p>
             <ul className="list-disc list-inside mt-2 text-gray-600">
               <li className="whitespace-nowrap">Built reusable UI components with React & Tailwind CSS</li>
@@ -58,7 +62,9 @@ const WorkExperience = () => {
           {/* Right Side */}
           <div className="w-1/2 pl-8">
             <p className="text-gray-700 font-medium">
-              Tech Used: React, Node.js, AWS, Docker
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium  ">
+                <span>Tech Used: React, Node.js, AWS, Docker</span>
+              </div>
             </p>
             <ul className="list-disc list-inside mt-2 text-gray-600">
               <li>Built reusable UI components with React & Tailwind</li>
