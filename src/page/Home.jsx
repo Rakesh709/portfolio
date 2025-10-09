@@ -6,6 +6,7 @@ import About from '../components/About'
 import { Minus } from 'lucide-react'
 import Contact from '../components/Contact'
 import WorkExperience from '../components/WorkExperience'
+import Projects from '../components/Projects'
 
 
 const Home = () => {
@@ -14,8 +15,8 @@ const Home = () => {
         
         <Navbar/>
         <Hero/>
-        
         <About/>
+        <Projects/>
         <WorkExperience/>
         <Contact/>
         

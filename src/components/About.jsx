@@ -1,5 +1,5 @@
 import React from 'react'
-import { Terminal, Sparkles, Zap, Rocket, Coffee, Github, Linkedin, Mail, ArrowRight, Check, Star } from 'lucide-react';
+import { Terminal, Sparkles, Zap, Rocket, Coffee, Github, Linkedin, Mail, ArrowRight, Check, Star, Code } from 'lucide-react';
 
 const About = () => {
     return (
@@ -33,6 +33,9 @@ const About = () => {
               </a>
               <a href="#" className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition">
                 <Mail size={20} />
+              </a>
+              <a href="#" className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition">
+                <Code size={20} />
               </a>
             </div>
           </div>
