@@ -30,12 +30,12 @@ const WorkExperience = () => {
 
           {/* Right Side */}
           <div className="w-1/2 pl-8">
-            <p className="text-gray-700 font-medium">
+            <div className="text-gray-700 font-medium">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium  ">
                 <span>Tech Used: React, Node.js, AWS, Docker</span>
               </div>
               
-            </p>
+            </div>
             <ul className="list-disc list-inside mt-2 text-gray-600">
               <li className="whitespace-nowrap">Built reusable UI components with React & Tailwind CSS</li>
               <li>Implemented CI/CD pipelines using Jenkins</li>
@@ -61,11 +61,11 @@ const WorkExperience = () => {
 
           {/* Right Side */}
           <div className="w-1/2 pl-8">
-            <p className="text-gray-700 font-medium">
+            <div className="text-gray-700 font-medium">
               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium  ">
                 <span>Tech Used: React, Node.js, AWS, Docker</span>
               </div>
-            </p>
+            </div>
             <ul className="list-disc list-inside mt-2 text-gray-600">
               <li>Built reusable UI components with React & Tailwind</li>
               <li>Implemented CI/CD pipelines using Jenkins</li>

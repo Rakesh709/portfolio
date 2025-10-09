@@ -2,10 +2,14 @@ import React,{useState, useEffect} from 'react'
 import SparkleButton from './SparkleButton.jsx';
 import { Terminal, Sparkles, Zap, Rocket, Coffee, Github, Linkedin, Mail, ArrowRight,  Check, Star, Download, Minus } from 'lucide-react';
 
+import profilePic from '../assets/newProfile.png';
+
 const Hero = ({ text}) => {
    const [typedText, setTypedText] = useState('');
   const [currentIndex, setCurrentIndex] = useState(0);
   const fullText = "Building digital products that matter";
+
+
 
   useEffect(() => {
     if (currentIndex < fullText.length) {
@@ -56,7 +60,7 @@ const Hero = ({ text}) => {
             <div className=' flex'>
                 <img className='rounded-lg w-full  object-cover 
                 transform transition-transform duration-500 
-               hover:rotate-3 hover:scale-105' src="../src/assets/new-profile.png" alt="" srcset="" />
+               hover:rotate-3 hover:scale-105' src={profilePic} alt="new"  />
             </div>
             
         </section>
