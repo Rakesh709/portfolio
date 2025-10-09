@@ -56,7 +56,7 @@ const Hero = ({ text}) => {
             <div className=' flex'>
                 <img className='rounded-lg w-full  object-cover 
                 transform transition-transform duration-500 
-               hover:rotate-3 hover:scale-105' src="src\assets\new-profile.png" alt="" srcset="" />
+               hover:rotate-3 hover:scale-105' src="../src/assets/new-profile.png" alt="" srcset="" />
             </div>
             
         </section>

@@ -7,7 +7,7 @@ const Contact = () => {
         <hr className='h-px my-2 bg-slate-200 border-0 dark:bg-slate-200' />
       <section id="contact" className="py-10 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-6xl font-bold mb-6">Let's work together</h2>
+          <h2 className="text-6xl font-bold mb-6 text-emerald-500">Let's work together</h2>
           <p className="text-xl text-slate-600 mb-12">
             Have a project in mind? Let's discuss how I can help bring your vision to life.
           </p>

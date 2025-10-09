@@ -16,7 +16,7 @@ const About = () => {
               Turning complex problems into elegant solutions
             </h2>
             <p className="text-slate-600 text-lg mb-6 leading-relaxed px-30">
-              I'm a passionate full stack developer with over 8 years of experience building scalable web applications. 
+              I'm a passionate full stack developer with over 3 years of experience building scalable web applications. 
               I specialize in creating seamless user experiences backed by robust, efficient systems.
             </p>
             <p className="text-slate-600 text-lg leading-relaxed px-30">
