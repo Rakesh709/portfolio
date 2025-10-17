@@ -7,6 +7,9 @@ import { Minus } from 'lucide-react'
 import Contact from '../components/Contact'
 import WorkExperience from '../components/WorkExperience'
 import Projects from '../components/Projects'
+import SparkleSection from '../components/SparkleSection'
+import TechStack from '../components/TechStack'
+import Footer from '../components/Footer'
 
 
 const Home = () => {
@@ -15,12 +18,13 @@ const Home = () => {
         
         <Navbar/>
         <Hero/>
+        <SparkleSection/>
         <About/>
+        <TechStack/>
         <Projects/>
         <WorkExperience/>
         <Contact/>
-        
-        
+        <Footer/>  
     </div>
   )
 }
