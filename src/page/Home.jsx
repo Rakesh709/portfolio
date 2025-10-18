@@ -14,8 +14,7 @@ import Footer from '../components/Footer'
 
 const Home = () => {
   return (
-    <div className='min-h-screen bg-white text-slate-900'>
-        
+    <div className='min-h-screen bg-white text-slate-900 '>
         <Navbar/>
         <Hero/>
         <SparkleSection/>

@@ -52,7 +52,7 @@
 
 
 import React from "react";
-import { Coffee, Github, Linkedin, Mail, Code } from "lucide-react";
+import { Coffee, Github, Linkedin, Mail, Code, Youtube } from "lucide-react";
 
 const About = () => {
   return (
@@ -82,32 +82,32 @@ const About = () => {
         {/* Social Links */}
         <div className="flex justify-center md:justify-start gap-4 mt-8">
           <a
-            href="#"
+            href="https://github.com/Rakesh709"
             className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition"
             aria-label="GitHub"
           >
             <Github size={20} />
           </a>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/rakesh-kumar-6b3228145/"
             className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition"
             aria-label="LinkedIn"
           >
             <Linkedin size={20} />
           </a>
           <a
-            href="#"
+            href="#contact"
             className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition"
             aria-label="Email"
           >
             <Mail size={20} />
           </a>
           <a
-            href="#"
+            href="https://www.youtube.com/@bucketflow"
             className="w-12 h-12 bg-slate-900 text-white rounded-full flex items-center justify-center hover:bg-emerald-600 transition"
             aria-label="Portfolio/Code"
           >
-            <Code size={20} />
+            <Youtube size={20} />
           </a>
         </div>
       </div>

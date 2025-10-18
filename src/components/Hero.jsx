@@ -98,7 +98,7 @@ const Hero = () => {
   }, [currentIndex]);
 
   return (
-    <section className="pt-32 pb-15 px-6 md:px-10 lg:px-35 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
+    <section className="pt-32 pb-10 px-6 md:px-10 lg:px-35 flex flex-col-reverse md:flex-row items-center justify-between gap-10">
       {/* Left Content */}
       <div className="flex-1">
         <SparkleButton text="Available for freelance projects" />
@@ -116,6 +116,7 @@ const Hero = () => {
         <div className="flex flex-wrap gap-4">
           <button className="px-8 py-4 bg-slate-900 text-white rounded-full font-medium hover:bg-slate-800 transition flex items-center gap-2">
             View My Work <ArrowRight size={18} />
+            
           </button>
 
           <a

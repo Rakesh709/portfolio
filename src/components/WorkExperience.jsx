@@ -92,7 +92,7 @@ const WorkExperience = () => {
   return (
     <>
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
-      <div className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4 px-6 md:px-10 lg:px-30">
+      <div id="work" className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4 px-6 md:px-10 lg:px-30">
         <BriefcaseBusiness size={20} />
         <span>Work Experience</span>
       </div>

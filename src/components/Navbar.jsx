@@ -48,14 +48,14 @@ const Navbar = () => {
 
         {/* Desktop Nav */}
         <nav className="hidden md:flex gap-8 text-sm font-medium">
+          <a href="#projects" className="hover:text-emerald-600 transition">
+            Projects
+          </a>
+          <a href="#tech" className="hover:text-emerald-600 transition">
+            Tech
+          </a>
           <a href="#work" className="hover:text-emerald-600 transition">
             Work
-          </a>
-          <a href="#about" className="hover:text-emerald-600 transition">
-            About
-          </a>
-          <a href="#stack" className="hover:text-emerald-600 transition">
-            Stack
           </a>
           <a href="#contact" className="hover:text-emerald-600 transition">
             Contact
@@ -83,25 +83,25 @@ const Navbar = () => {
         <div className="md:hidden bg-white border-t border-slate-200">
           <nav className="flex flex-col items-center py-4 space-y-4 text-sm font-medium">
             <a
+              href="#projects"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-emerald-600 transition"
+            >
+              Projects
+            </a>
+            <a
+              href="#tech"
+              onClick={() => setIsOpen(false)}
+              className="hover:text-emerald-600 transition"
+            >
+              Tech
+            </a>
+            <a
               href="#work"
               onClick={() => setIsOpen(false)}
               className="hover:text-emerald-600 transition"
             >
               Work
-            </a>
-            <a
-              href="#about"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              About
-            </a>
-            <a
-              href="#stack"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              Stack
             </a>
             <a
               href="#contact"

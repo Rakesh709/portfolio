@@ -93,7 +93,7 @@ const TechStack = () => {
     ));
 
   return (
-    <section className="py-8 px-6 md:px-10 lg:px-16 bg-white">
+    <section  id="tech" className="py-8 px-6 md:px-10 lg:px-16 bg-white">
       {/* Section Title */}
       <div className="inline-flex items-center gap-2 mb-6 px-15 text-emerald-600 font-medium">
         <Cpu size={20} />
