@@ -197,7 +197,7 @@ const Projects = () => {
   const featuredProjects = projects.filter((p) => p.featured);
 
   return (
-    <section id="projects" className="py-8 px-6 md:px-10 lg:px-16 bg-slate-50">
+    <section id="projects" className="py-20 px-6 md:px-10 lg:px-16 bg-slate-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4">

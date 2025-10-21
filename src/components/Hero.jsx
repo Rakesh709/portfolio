@@ -158,7 +158,7 @@ import {
   Database,
 } from "lucide-react";
 import profilePic from "../assets/newProfile.png";
-import { FaReact, FaAws, FaDocker, FaNodeJs,FaJs ,FaDatabase  } from "react-icons/fa";
+import { FaReact, FaAws, FaDocker, FaNodeJs,FaJs ,FaDatabase,FaJenkins   } from "react-icons/fa";
 
 
 
@@ -226,8 +226,9 @@ const Hero = () => {
           <FaNodeJs className="absolute text-green-600 text-4xl animate-bounce-slow bottom-8 left-10" />
           <FaDocker className="absolute text-blue-500 text-4xl animate-bounce-slow top-10 right-10" />
           <FaAws className="absolute text-orange-500 text-4xl animate-bounce-slow bottom-6 right-6" />
-          <FaJs  className="absolute text-yellow-500  text-4xl top-1/2 left-[-40px] hidden md:block" />
-          <FaDatabase  className="absolute text-purple-400  text-4xl bottom-1/2 right-[-40px] hidden md:block" />
+          <FaJs  className="absolute text-yellow-500  text-4xl animate-bounce-slow bottom-6 right-6 top-1/2 left-[-40px] hidden md:block" />
+          <FaDatabase  className="absolute text-purple-400 animate-bounce-slow text-4xl bottom-1/2 right-[-40px] hidden md:block" />
+          {/* <FaJenkins  className="absolute text-black-400 animate-bounce-slow text-4xl top-1 left-50 " /> */}
         </div>
       </div>
 

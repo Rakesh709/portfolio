@@ -56,7 +56,7 @@ import { Coffee, Github, Linkedin, Mail, Code, Youtube } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="py-6 px-6 md:px-10 lg:px-16 bg-slate-50">
+    <section className="py-20 px-6 md:px-10 lg:px-16 bg-slate-50">
       {/* Section Divider */}
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
 

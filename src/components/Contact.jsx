@@ -54,7 +54,7 @@ import { ArrowRight } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-8 px-6 md:px-10 lg:px-16 bg-slate-50">
+    <section id="contact" className="py-20 px-6 md:px-10 lg:px-16 bg-slate-50">
       {/* Divider */}
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
 
