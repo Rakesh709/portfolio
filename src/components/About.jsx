@@ -67,7 +67,7 @@ const About = () => {
           <span>About Me</span>
         </div>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-6">
+        <h2 className="text-4xl md:text-3xl font-bold mb-6">
           Turning complex problems into elegant solutions
         </h2>
 

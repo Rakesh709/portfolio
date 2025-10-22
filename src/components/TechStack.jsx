@@ -101,7 +101,7 @@ const TechStack = () => {
       </div>
 
       <div className="max-w-7xl mx-auto text-center md:text-left">
-        <h2 className="text-4xl md:text-5xl font-bold mb-2 text-black-600">
+        <h2 className="text-4xl md:text-3xl font-bold mb-2 text-black-600">
           My Tech Stack
         </h2>
         <p className="text-lg md:text-xl text-slate-600 mb-8">
