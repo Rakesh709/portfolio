@@ -205,7 +205,7 @@ const Projects = () => {
           <span>My Work</span>
         </div>
 
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">
+        <h2 className="text-3xl md:text-3xl font-bold mb-4">
           Featured Projects
         </h2>
         <p className="text-lg md:text-xl text-gray-600 mb-12">

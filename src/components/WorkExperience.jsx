@@ -90,10 +90,10 @@ import React from "react";
 
 const WorkExperience = () => {
   return (
-    <>
-    <div className="">
+    
+    <div id="work" className="mt-5">
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
-      <div id="work" className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4  md:px-10 lg:px-30">
+      <div  className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4  md:px-10 lg:px-30">
         <BriefcaseBusiness size={20} />
         <span>Work Experience</span>
       </div>
@@ -122,7 +122,7 @@ const WorkExperience = () => {
               Tech Used: React, Node.js, AWS, Docker
             </div>
             <ul className="list-disc list-inside text-gray-600 space-y-1">
-              <li>Built reusable UI components with React & Tailwind CSS</li>
+              <li>Built reusable UI components with React & Tailwind</li>
               <li>Implemented CI/CD pipelines using Jenkins</li>
               <li>Optimized cloud deployment with AWS & Docker</li>
             </ul>
@@ -157,7 +157,7 @@ const WorkExperience = () => {
         </div>
       </div>
       </div>
-    </>
+    
   );
 };
 
