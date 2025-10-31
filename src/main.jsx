@@ -6,6 +6,6 @@ import {BrowserRouter} from "react-router-dom"
 
 createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <App />
+    <App className='mx-4' />
   </BrowserRouter>,
 )
