@@ -1,95 +1,41 @@
+import React, { useState } from 'react'
 
-import React, { useState } from "react";
-import { Terminal, Menu, X } from "lucide-react";
-
+import { NavLink, useNavigate } from 'react-router-dom'
 const Navbar = () => {
-  const [isOpen, setIsOpen] = useState(false);
 
+    const navigate = useNavigate();
+
+    const [showMenu,setShowMenu] = useState(false);
+    //is the token then login or else not login
+    const [token,setToken] = useState(true);    
+    
   return (
-    <header className="fixed top-0 w-full bg-white/80 backdrop-blur-md border-b border-slate-200 z-50">
-      <div className="max-w-7xl mx-auto px-6 md:px-10 lg:px-8 py-4 flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center gap-2 text-xl font-bold">
-          <Terminal className="text-emerald-600" size={24} />
-          <span>Rakesh Kumar</span>
-        </div>
+    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
+        <img className='w-44 cursor-pointer' alt="logo" onClick={()=>{navigate('/')}} />
+        <ul className='hidden md:flex items-start gap-5 font-medium'>
+            <NavLink to='/'>
+                <li className='py-1'>HOME</li>
+                <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
+            </NavLink>
 
-        {/* Desktop Nav */}
-        <nav className="hidden md:flex gap-8 text-sm font-medium">
-          <a href="#projects" className="hover:text-emerald-600 transition">
-            Projects
-          </a>
-          <a href="#tech" className="hover:text-emerald-600 transition">
-            Tech
-          </a>
-          <a href="#work" className="hover:text-emerald-600 transition">
-            Work
-          </a>
-          <a href="#contact" className="hover:text-emerald-600 transition">
-            Contact
-          </a>
-        </nav>
+            <NavLink to='/doctors'>
+                <li className='py-1'>ALL DOCTORS</li>
+                <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
+            </NavLink>
 
-        {/* Right Button */}
-        <div className="hidden md:block">
-          <button className="px-5 py-2 border bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-slate-800 transition">
-            Let's Talk
-          </button>
-        </div>
+            <NavLink to='/about'>
+                <li className='py-1'>ABOUT</li>
+                <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
+            </NavLink>
 
-        {/* Mobile Menu Toggle */}
-        <button
-          className="md:hidden p-2 text-slate-700 hover:text-emerald-600 transition"
-          onClick={() => setIsOpen(!isOpen)}
-        >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
-      </div>
+            <NavLink to='/contact'>
+                <li className='py-1'>CONTACT</li>
+                <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
+            </NavLink>
+        </ul>
+        
+    </div>
+  )
+}
 
-      {/* Mobile Nav Menu */}
-      {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200">
-          <nav className="flex flex-col items-center py-4 space-y-4 text-sm font-medium">
-            <a
-              href="#projects"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              Projects
-            </a>
-            <a
-              href="#tech"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              Tech
-            </a>
-            <a
-              href="#work"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              Work
-            </a>
-            <a
-              href="#contact"
-              onClick={() => setIsOpen(false)}
-              className="hover:text-emerald-600 transition"
-            >
-              Contact
-            </a>
-
-            <button
-              onClick={() => setIsOpen(false)}
-              className="px-5 py-2 border bg-slate-900 text-white rounded-full text-sm font-medium hover:bg-slate-800 transition"
-            >
-              Let's Talk
-            </button>
-          </nav>
-        </div>
-      )}
-    </header>
-  );
-};
-
-export default Navbar;
+export default Navbar
