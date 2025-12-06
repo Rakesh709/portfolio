@@ -5,9 +5,9 @@ import React from "react";
 const WorkExperience = () => {
   return (
     
-    <div id="work" className="mt-5">
+    <div id="work" className="mt-20 mb-20">
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
-      <div  className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4  md:px-10 lg:px-30">
+      <div  className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4 ">
         <BriefcaseBusiness size={20} />
         <span>Work Experience</span>
       </div>
@@ -23,8 +23,8 @@ const WorkExperience = () => {
             <h3 className="text-xl font-bold">
               Torry Harris Integration Solutions
             </h3>
-            <p className="text-gray-600">Software Engineer</p>
-            <span className="text-sm text-gray-500">Jan 2025 – Present</span>
+            <p className="text-gray-300">Software Engineer</p>
+            <span className="text-sm text-gray-300">Jan 2025 – Present</span>
           </div>
 
           {/* Dot in middle */}
@@ -35,7 +35,7 @@ const WorkExperience = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium mb-2">
               Tech Used: React, Node.js, AWS, Docker
             </div>
-            <ul className="list-disc list-inside text-gray-600 space-y-1">
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Built reusable UI components with React & Tailwind</li>
               <li>Implemented CI/CD pipelines using Jenkins</li>
               <li>Optimized cloud deployment with AWS & Docker</li>
@@ -50,8 +50,8 @@ const WorkExperience = () => {
             <h3 className="text-xl font-bold">
               Torry Harris Integration Solutions
             </h3>
-            <p className="text-gray-600">Associate Software Engineer</p>
-            <span className="text-sm text-gray-500">Nov 2021 – 24</span>
+            <p className="text-gray-300">Associate Software Engineer</p>
+            <span className="text-sm text-gray-300">Nov 2021 – 24</span>
           </div>
 
           {/* Dot in middle */}
@@ -62,7 +62,7 @@ const WorkExperience = () => {
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium mb-2">
               Tech Used: React, Node.js, AWS, Docker
             </div>
-            <ul className="list-disc list-inside text-gray-600 space-y-1">
+            <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Built reusable UI components with React & Tailwind</li>
               <li>Implemented CI/CD pipelines using Jenkins</li>
               <li>Optimized cloud deployment with AWS & Docker</li>

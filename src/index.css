@@ -7,6 +7,8 @@
   font-family: Outfit;
 }
 
+
+
 @plugin "daisyui/theme" {
   name: "forest";
   default: false;
@@ -40,4 +42,14 @@
   --border: 1px;
   --depth: 1;
   --noise: 1;
+}
+
+
+@theme {
+  --color-primary: #ffffff;
+  --grid-template-columns-auto: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.active hr{
+  @apply block
 }

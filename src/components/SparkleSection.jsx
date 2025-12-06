@@ -1,10 +1,10 @@
 import React from 'react'
-import SparkleButton from './SparkleButton'
+import SparkleButton from '../components/SparkleButton.jsx'
 import { MoveDown } from 'lucide-react'
 
 const SparkleSection = () => {
   return (
-    <div className='flex flex-col justify-center items-center '>
+    <div className='flex flex-col justify-center items-center mt-8'>
       <div className='text-center'>
         <SparkleButton text="Avaiable for Hybrid Work"/>
     </div>

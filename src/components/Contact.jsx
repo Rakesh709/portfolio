@@ -35,19 +35,19 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 px-6 md:px-10 lg:px-16 bg-slate-50">
+    <section id="contact" className=" md:px-10 lg:px-16 mt-20 mb-10">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-6 text-emerald-500">
           Let's work together
         </h2>
-        <p className="text-lg md:text-xl text-slate-600 mb-12">
+        <p className="text-lg md:text-xl text-slate-300 mb-12">
           Have a project in mind? Let's discuss how I can help bring your vision to life.
         </p>
 
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="bg-white rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm"
+          className=" rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <input
@@ -79,12 +79,34 @@ const Contact = () => {
           />
 
           <button
-            type="submit"
-            disabled={isSending}
-            className="w-full py-4 bg-slate-900 text-white rounded-xl font-medium hover:bg-emerald-600 transition flex items-center justify-center gap-2"
-          >
-            {isSending ? "Sending..." : "Send Message"} <ArrowRight size={18} />
-          </button>
+  type="submit"
+  disabled={isSending}
+  className="
+    w-full py-4
+    text-white font-medium
+    rounded-xl
+    flex items-center justify-center gap-2
+    transition-all duration-200
+
+    /* Base look */
+    bg-gradient-to-br from-slate-800 to-slate-900
+    border border-white
+    shadow-[0_5px_0_0_rgba(0,0,0,0.6)]
+
+    /* Hover (green + glow) */
+    hover:bg-gradient-to-br hover:from-emerald-500 hover:to-emerald-700
+    hover:shadow-[0_7px_0_0_rgba(0,0,0,0.55),0_0_20px_rgba(255,255,255,0.35)]
+
+    /* Active press effect */
+    active:shadow-[0_3px_0_0_rgba(0,0,0,0.7)]
+    active:translate-y-1
+
+    disabled:opacity-50 disabled:cursor-not-allowed
+  "
+>
+  {isSending ? "Sending..." : "Send Message"}
+</button>
+
 
           {message && (
             <p className="text-center mt-4 text-emerald-600 font-medium">

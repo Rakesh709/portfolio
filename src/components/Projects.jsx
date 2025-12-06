@@ -31,7 +31,7 @@ const Projects = () => {
   const featuredProjects = projects.filter((p) => p.featured);
 
   return (
-    <section id="projects" className="py-20 px-6 md:px-10 lg:px-16 bg-slate-50">
+    <section id="projects" className="mt-30 mb-20">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4">
@@ -42,7 +42,7 @@ const Projects = () => {
         <h2 className="text-3xl md:text-3xl font-bold mb-4">
           Featured Projects
         </h2>
-        <p className="text-lg md:text-xl text-gray-600 mb-12">
+        <p className="text-lg md:text-xl text-gray-300 mb-12">
           A selection of projects that showcase my skills and passion for development.
         </p>
 
@@ -54,11 +54,11 @@ const Projects = () => {
               className="group bg-white rounded-xl shadow hover:shadow-2xl overflow-hidden transition-all duration-500"
             >
               {/* Project Image */}
-              <div className="relative">
+              <div className="relative ">
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-56 object-cover group-hover:scale-110 transition-transform duration-500 "
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
@@ -85,7 +85,7 @@ const Projects = () => {
 
               {/* Project Content */}
               <div className="p-6">
-                <h3 className="text-xl font-semibold mb-3 group-hover:text-emerald-600 transition-colors">
+                <h3 className="text-black text-xl font-semibold mb-3 group-hover:text-emerald-600 transition-colors">
                   {project.title}
                 </h3>
                 <p className="text-gray-600 mb-4 text-sm">{project.description}</p>

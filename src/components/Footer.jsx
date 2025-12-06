@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="bg-slate-900 text-white py-12 px-6 md:px-10 lg:px-16">
+    <footer className="bg-slate-900 text-white mt-20 ">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
         
         {/* Left: Logo / Name */}
@@ -43,7 +43,7 @@ const Footer = () => {
       <hr className="my-8 border-gray-700" />
 
       {/* Bottom */}
-      <p className="text-center text-gray-400 text-sm">
+      <p className="text-center text-gray-300 text-sm">
         &copy; {new Date().getFullYear()} Rakesh Kumar. All rights reserved.
       </p>
     </footer>
