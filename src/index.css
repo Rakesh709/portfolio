@@ -9,6 +9,7 @@
 
 
 
+
 @plugin "daisyui/theme" {
   name: "forest";
   default: false;
@@ -52,4 +53,9 @@
 
 .active hr{
   @apply block
+}
+
+
+body {
+  @apply bg-slate-900;
 }

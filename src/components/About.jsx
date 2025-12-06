@@ -22,11 +22,11 @@ const About = () => {
           Turning complex problems into elegant solutions
         </h2>
 
-        <p className="text-lg md:text-xl text-slate-300 mb-4 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#909092] mb-4 leading-relaxed">
           I'm a passionate full stack developer with over 3 years of experience building scalable web applications. I specialize in creating seamless user experiences backed by robust, efficient systems.
         </p>
 
-        <p className="text-lg md:text-xl text-slate-300 leading-relaxed">
+        <p className="text-lg md:text-xl text-[#909092] leading-relaxed">
           From startups to enterprise clients, I've helped bring dozens of products to life, always focusing on clean code, performance, and user satisfaction.
         </p>
 

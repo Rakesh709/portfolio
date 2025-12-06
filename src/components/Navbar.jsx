@@ -6,7 +6,7 @@ const Navbar = () => {
  
     
   return (
-    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
+    <div className='flex items-center justify-between text-sm py-6 mb-5 border-b border-b-gray-400'>
         {/* Logo */}
         <div className="flex items-center gap-2 text-xl font-bold">
           <Terminal className="text-emerald-600" size={24} />
@@ -16,6 +16,11 @@ const Navbar = () => {
             <NavLink to='/' className='hover:text-emerald-600 transition'>
                 <li className='py-1'>HOME</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
+            </NavLink>
+
+            <NavLink to='/githubDoc' className='hover:text-emerald-600 transition'>
+                <li className='py-1'>GITHUB DOC</li>
+                <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
             <NavLink to='/projects' className='hover:text-emerald-600 transition'>

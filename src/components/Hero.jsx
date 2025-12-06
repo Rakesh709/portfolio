@@ -63,7 +63,7 @@ const Hero = () => {
 
     /* White glow */
     ring-1 ring-white/20
-    shadow-white/20 shadow-[0_0_12px]
+    shadow-white/20
 
     hover:shadow-[0_6px_0_0_rgba(0,0,0,0.3),0_0_18px_rgba(255,255,255,0.35)]
     active:shadow-[0_2px_0_0_rgba(0,0,0,0.5),0_0_10px_rgba(255,255,255,0.25)]
@@ -73,14 +73,14 @@ const Hero = () => {
     flex items-center gap-2
     border border-white/40"
                     >
-                        View My Work <ArrowRight size={18} />
+                        Proof of Work <ArrowRight size={18} />
                     </Link>
 
                     <a
                         href="https://drive.google.com/file/d/1ObJ9_u5Q5YDp2mjiXTZBa87HsAGq3knd/view?usp=sharing"
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-6 py-3 rounded-full font-medium text-white bg-gradient-to-br from-slate-800 to-slate-900 shadow-[0_4px_0_0_rgba(0,0,0,0.4)]  ring-1 ring-white/20 shadow-white/20 shadow-[0_0_12px]  hover:shadow-[0_6px_0_0_rgba(0,0,0,0.3),0_0_18px_rgba(255,255,255,0.35)] active:shadow-[0_2px_0_0_rgba(0,0,0,0.5),0_0_10px_rgba(255,255,255,0.25)]  active:translate-y-1  transition-all duration-200  flex items-center gap-2  border border-white/40"
+                        className="px-6 py-3 rounded-full font-medium text-white bg-gradient-to-br from-slate-800 to-slate-900 shadow-[0_4px_0_0_rgba(0,0,0,0.4)]  ring-1 ring-white/20 shadow-white/20  hover:shadow-[0_6px_0_0_rgba(0,0,0,0.3),0_0_18px_rgba(255,255,255,0.35)] active:shadow-[0_2px_0_0_rgba(0,0,0,0.5),0_0_10px_rgba(255,255,255,0.25)]  active:translate-y-1  transition-all duration-200  flex items-center gap-2  border border-white/40"
                     >
                         Download Resume <Download size={18} />
                     </a>
