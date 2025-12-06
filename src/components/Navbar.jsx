@@ -6,7 +6,7 @@ const Navbar = () => {
  
     
   return (
-    <div className='flex items-center justify-between text-sm py-4 mb-5 border-b border-b-gray-400'>
+    <div className='flex items-center justify-between text-sm py-6 mb-5 border-b border-b-gray-400 '>
         {/* Logo */}
         <div className="flex items-center gap-2 text-xl font-bold">
           <Terminal className="text-emerald-600" size={24} />
