@@ -1,10 +1,11 @@
 import React from 'react'
+import InfographicImg from '../components/InfographicImg'
 
 
 const Infographic = () => {
   return (
     <div>
-      Infographic
+      <InfographicImg/>
     </div>
   )
 }
