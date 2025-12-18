@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import SparkleButton from "./SparkleButton.jsx";
 import { Link } from "react-router-dom";
+import {motion} from "motion/react"
 import {
     ArrowRight,
     Download,
@@ -90,10 +91,13 @@ const Hero = () => {
             {/* Right Image + Floating Icons */}
             <div className="flex-1 relative flex justify-center md:justify-end">
                 <div className="relative w-full max-w-sm md:max-w-md">
-                    <img
+                    <motion.img
+                         whileHover={{scale:1.05,y:-2}}
+                         whileTap={{scale:0.9,y:1}}
+                        transition={{type:"spring",stiffness:700,damping:20}}
                         src={profilePic}
                         alt="Rakesh Kumar"
-                        className="rounded-lg w-full object-cover transform transition-transform duration-500 hover:rotate-3 hover:scale-105"
+                        className="rounded-lg w-full object-cover transform transition-transform"
                     />
 
                     {/* Floating Tech Icons */}
