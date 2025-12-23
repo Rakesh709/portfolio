@@ -33,12 +33,12 @@ const WorkExperience = () => {
           {/* Right Side */}
           <div className="w-full md:w-1/2 pl-0 md:pl-8 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium mb-2">
-              Tech Used: React, Node.js, AWS, Docker
+              Tech Used: React,Typescript, AWS,Blazemeter
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Built reusable UI components with React & Tailwind</li>
-              <li>Implemented CI/CD pipelines using Jenkins</li>
-              <li>Optimized cloud deployment with AWS & Docker</li>
+              <li>Built Internal tool with ReactJs & NodeJs</li>
+              <li>Deploy Backstage on aws using EC2</li>
+              <li>Performed E2E Testing On Rest and SOAP APIs</li>
             </ul>
           </div>
         </div>
@@ -60,12 +60,12 @@ const WorkExperience = () => {
           {/* Right Side */}
           <div className="w-full md:w-1/2 pl-0 md:pl-8 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium mb-2">
-              Tech Used: React, Node.js, AWS, Docker
+              Tech Used: Javascript,APIGEE, Postman, React, AWS
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
-              <li>Built reusable UI components with React & Tailwind</li>
-              <li>Implemented CI/CD pipelines using Jenkins</li>
-              <li>Optimized cloud deployment with AWS & Docker</li>
+              <li>Built REST API using APIGEE and Javascript</li>
+              <li>Performed E2E Testing On Rest and SOAP APIs</li>
+              <li>Internal Application Frontend using reactJs</li>
             </ul>
           </div>
         </div>
