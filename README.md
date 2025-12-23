@@ -80,7 +80,7 @@ portfolio/
 │   │   │   └── 📄 WorkExperience.jsx
 │   │   ├── 📁 page
 │   │   │   ├── 📄 Blogs.jsx
-│   │   │   ├── 📄 GithubDoc.jsx
+│   │   │   ├── 📄 Readmegenerator.jsx
 │   │   │   ├── 📄 Home.jsx
 │   │   │   ├── 📄 Infographic.jsx
 │   │   │   ├── 📄 Projects.jsx

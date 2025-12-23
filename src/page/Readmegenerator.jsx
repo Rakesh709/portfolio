@@ -2,7 +2,7 @@ import React from 'react'
 import { FiGithub } from "react-icons/fi";
 import RedirectCard from "../components/GithubDocument.jsx";
 
-const GithubDoc = () => {
+const Readmegenerator = () => {
   return (
     <div>
       <div className="p-6 max-w-3xl mx-auto grid gap-4 mb-65">
@@ -24,4 +24,4 @@ const GithubDoc = () => {
   )
 }
 
-export default GithubDoc
+export default Readmegenerator
