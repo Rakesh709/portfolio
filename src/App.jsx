@@ -8,7 +8,7 @@ import Infographic from "./page/Infographic.jsx";
 import Projects from "../src/page/Projects.jsx"
 import Youtube from "../src/page/Youtube.jsx"
 import Footer from "./components/Footer.jsx";
-import GithubDoc from "./page/GithubDoc.jsx";
+import Readmegenerator from "./page/Readmegenerator.jsx";
 
 function App() {
   return (
@@ -17,7 +17,7 @@ function App() {
         <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='/projects' element={<Projects/>}/>
-            <Route path='/githubDoc' element={<GithubDoc/>}/>
+            <Route path='/Readmegenerator' element={<Readmegenerator/>}/>
             <Route path='/youtube' element={<Youtube/>}/>
             <Route path='/blog' element={<Blogs/>}/>
             <Route path='/infographic' element={<Infographic/>}/>

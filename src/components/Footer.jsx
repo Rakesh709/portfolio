@@ -13,7 +13,7 @@ const Footer = () => {
 
         {/* Center: Tagline */}
         <p className="text-center text-sm text-gray-300 md:text-base">
-          Building digital products that matter. Full Stack Developer & Problem Solver.
+          Full-Stack Developer & Problem Solver — currently battling testing 😄
         </p>
 
         {/* Right: Social Icons */}

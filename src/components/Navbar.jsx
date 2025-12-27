@@ -18,8 +18,8 @@ const Navbar = () => {
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink>
 
-            <NavLink to='/githubDoc' className='hover:text-emerald-600 transition'>
-                <li className='py-1'>GITHUB DOC</li>
+            <NavLink to='/Readmegenerator' className='hover:text-emerald-600 transition'>
+                <li className='py-1'>GRMG</li>
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
@@ -33,10 +33,10 @@ const Navbar = () => {
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
-            <NavLink to='/blog' className='hover:text-emerald-600 transition'>
+            {/* <NavLink to='/blog' className='hover:text-emerald-600 transition'>
                 <li className='py-1'>BLOGS</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
-            </NavLink>
+            </NavLink> */}
 
             <NavLink to='/infographic' className='hover:text-emerald-600 transition'>
                 <li className='py-1'>INFOGRAPHIC</li>

@@ -19,15 +19,15 @@ const About = () => {
         </div>
 
         <h2 className="text-6xl md:text-3xl font-bold mb-6">
-          Turning complex problems into elegant solutions
+          I keep breaking my limits — not to prove I’m the best, but to become better than I was yesterday.
         </h2>
 
         <p className="text-lg md:text-xl text-[#909092] mb-4 leading-relaxed">
-          I'm a passionate full stack developer with over 3 years of experience building scalable web applications. I specialize in creating seamless user experiences backed by robust, efficient systems.
+          I'm a self tought full stack developer with over 4 years of experience building scalable web applications. I specialize in creating seamless user experiences backed by robust, efficient systems.
         </p>
 
         <p className="text-lg md:text-xl text-[#909092] leading-relaxed">
-          From startups to enterprise clients, I've helped bring dozens of products to life, always focusing on clean code, performance, and user satisfaction.
+          From idea to production, I’ve helped bring products to life, always focusing on clean code, performance, and user satisfaction.
         </p>
 
         {/* Social Links */}

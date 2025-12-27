@@ -24,7 +24,7 @@ import {
 const Hero = () => {
     const [typedText, setTypedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
-    const fullText = "Building digital products that matter";
+    const fullText = "From Local To Web";
 
     useEffect(() => {
         if (currentIndex < fullText.length) {
@@ -43,8 +43,8 @@ const Hero = () => {
                 <SparkleButton text="Available for freelance projects" />
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
-                    Full Stack <br />
-                    <span className="text-emerald-600">Engineer</span>
+                    Web & Infra<br />
+                    <span className="text-emerald-600">Engineer <span className="text-blue-500 text-7xl">🛠</span></span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-yellow-600 font-light mb-8">
