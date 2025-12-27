@@ -33,10 +33,10 @@ const Navbar = () => {
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
-            <NavLink to='/blog' className='hover:text-emerald-600 transition'>
+            {/* <NavLink to='/blog' className='hover:text-emerald-600 transition'>
                 <li className='py-1'>BLOGS</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
-            </NavLink>
+            </NavLink> */}
 
             <NavLink to='/infographic' className='hover:text-emerald-600 transition'>
                 <li className='py-1'>INFOGRAPHIC</li>

@@ -4,7 +4,7 @@ import { Code, Database, Server, Monitor, Cpu } from "lucide-react";
 
 const TechStack = () => {
   const frontend = ["React", "Next.js", "Tailwind CSS", "JavaScript", "HTML&CSS"];
-  const backend = ["Node.js", "Express", "MongoDB"];
+  const backend = ["Node.js", "Express", "MongoDB","Postman"];
   const devops = ["Docker", "AWS","CI/CD"];
   const others = ["Git", "Figma", "REST APIs"];
 

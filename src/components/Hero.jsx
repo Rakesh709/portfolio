@@ -44,7 +44,7 @@ const Hero = () => {
 
                 <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
                     Web & Infra<br />
-                    <span className="text-emerald-600">Engineer</span>
+                    <span className="text-emerald-600">Engineer <span className="text-blue-500 text-7xl">🛠</span></span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-yellow-600 font-light mb-8">

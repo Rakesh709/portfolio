@@ -38,7 +38,7 @@ const WorkExperience = () => {
             <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Built Internal tool with ReactJs & NodeJs</li>
               <li>Deploy Backstage on aws using EC2</li>
-              <li>Performed E2E Testing On Rest and SOAP APIs</li>
+              <li>Performed E2E Testing On REST and SOAP APIs</li>
             </ul>
           </div>
         </div>
@@ -64,7 +64,7 @@ const WorkExperience = () => {
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Built REST API using APIGEE and Javascript</li>
-              <li>Performed E2E Testing On Rest and SOAP APIs</li>
+              <li>Performed E2E Testing On REST and SOAP APIs</li>
               <li>Internal Application Frontend using reactJs</li>
             </ul>
           </div>
