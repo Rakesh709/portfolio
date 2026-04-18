@@ -47,7 +47,7 @@ const Contact = () => {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className=" rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm"
+          className=" rounded-3xl p-8 md:p-12 border border-slate-200 shadow-sm text-gray-300"
         >
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
             <input
@@ -55,7 +55,7 @@ const Contact = () => {
               name="user_name"
               placeholder="Name"
               required
-              className="w-full px-6 py-4 border border-slate-300 rounded-xl focus:border-emerald-600 focus:outline-none transition"
+              className="w-full px-6 py-4 border border-slate-300 rounded-xl  focus:border-emerald-600 focus:outline-none transition"
             />
             <input
               type="email"

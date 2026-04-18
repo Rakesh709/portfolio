@@ -10,25 +10,25 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center gap-2 text-xl font-bold">
           <Terminal className="text-emerald-600" size={24} />
-          <span>Rakesh Kumar</span>
+          <span className='text-gray-300'>Rakesh Kumar</span>
         </div>
         <ul className='hidden md:flex items-start gap-5 font-medium '>
-            <NavLink to='/' className='hover:text-emerald-600 transition'>
-                <li className='py-1'>HOME</li>
+            <NavLink to='/' className='text-gray-200 hover:text-emerald-600 transition'>
+                <li className='py-1 '>HOME</li>
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink>
 
-            <NavLink to='/Readmegenerator' className='hover:text-emerald-600 transition'>
-                <li className='py-1'>GRMG</li>
+            <NavLink to='/Readmegenerator' className='text-gray-200 hover:text-emerald-600 transition'>
+                <li className='py-1 '>GRMG</li>
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
-            <NavLink to='/projects' className='hover:text-emerald-600 transition'>
+            <NavLink to='/projects' className='text-gray-200 hover:text-emerald-600 transition'>
                 <li className='py-1'>PROJECTS</li>
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
 
-            <NavLink to='/youtube' className='hover:text-emerald-600 transition'>
+            <NavLink to='/youtube' className='text-gray-200 hover:text-emerald-600 transition'>
                 <li className='py-1'>YOUTUBE</li>
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
@@ -38,8 +38,8 @@ const Navbar = () => {
                 <hr className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden' />
             </NavLink> */}
 
-            <NavLink to='/infographic' className='hover:text-emerald-600 transition'>
-                <li className='py-1'>INFOGRAPHIC</li>
+            <NavLink to='/infographic' className=' text-gray-200 hover:text-emerald-600 transition'>
+                <li className='py-1 '>INFOGRAPHIC</li>
                 <hr  className='border-none outline-none h-0.5 bg-primary w-3/5 m-auto hidden'/>
             </NavLink>
         </ul>

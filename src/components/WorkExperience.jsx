@@ -19,7 +19,7 @@ const WorkExperience = () => {
         {/* Experience Item 1 */}
         <div className="flex flex-col md:flex-row w-full max-w-4xl mb-12">
           {/* Left Side */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0">
+          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0 text-gray-300">
             <h3 className="text-xl font-bold">
               Torry Harris Integration Solutions
             </h3>

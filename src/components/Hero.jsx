@@ -11,6 +11,7 @@ import {
     Database,
 } from "lucide-react";
 import profilePic from "../assets/newProfile.png";
+import background from "../assets/bg.png";
 import {
     FaReact,
     FaAws,
@@ -42,7 +43,7 @@ const Hero = () => {
             <div className="flex-1 z-10">
                 <SparkleButton text="Available for freelance projects" />
 
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight">
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gray-100">
                     Web & Infra<br />
                     <span className="text-emerald-600">Engineer <span className="text-blue-500 text-7xl">🛠</span></span>
                 </h1>
@@ -90,15 +91,38 @@ const Hero = () => {
 
             {/* Right Image + Floating Icons */}
             <div className="flex-1 relative flex justify-center md:justify-end">
+                
+
                 <div className="relative w-full max-w-sm md:max-w-md">
-                    <motion.img
+
+                    {/* Background Grid (Behind) */}
+                        {/* <motion.img
+                            src={background}
+                                alt="grid"
+                                className="absolute bottom-0 left-0  opacity-80 z-0 w-600 h-115  rounded-2xl blur-m object-cover"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                        /> */}
+
+
+                        <motion.img
+                           whileHover={{ scale: 1.05, y: -2 }}
+                           whileTap={{ scale: 0.9, y: 1 }}
+                           transition={{ type: "spring", stiffness: 700, damping: 20 }}
+                           src={profilePic}
+                           alt="Rakesh Kumar"
+                           className="relative z-10 rounded-lg w-full object-cover"
+                        />
+
+                    {/* <motion.img
                          whileHover={{scale:1.05,y:-2}}
                          whileTap={{scale:0.9,y:1}}
                         transition={{type:"spring",stiffness:700,damping:20}}
                         src={profilePic}
                         alt="Rakesh Kumar"
                         className="rounded-lg w-full object-cover transform transition-transform"
-                    />
+                    /> */}
+                    
 
                     {/* Floating Tech Icons */}
                     <FaReact className="absolute text-emerald-500 text-4xl animate-bounce-slow top-4 left-6" />
@@ -109,6 +133,7 @@ const Hero = () => {
                     <FaDatabase className="absolute text-purple-400 animate-bounce-slow text-4xl bottom-1/2 right-[-40px] hidden md:block" />
                     {/* <FaJenkins  className="absolute text-black-400 animate-bounce-slow text-4xl top-1 left-50 " /> */}
                 </div>
+                
             </div>
 
             {/* Soft background electric gradient */}
