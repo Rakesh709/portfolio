@@ -18,7 +18,7 @@ const About = () => {
           <span>About Me</span>
         </div>
 
-        <h2 className="text-6xl md:text-3xl font-bold mb-6">
+        <h2 className="text-6xl md:text-3xl font-bold mb-6 text-gray-200">
           I keep breaking my limits — not to prove I’m the best, but to become better than I was yesterday.
         </h2>
 
