@@ -19,7 +19,7 @@ const WorkExperience = () => {
         {/* Experience Item 1 */}
         <div className="flex flex-col md:flex-row w-full max-w-4xl mb-12">
           {/* Left Side */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0 text-gray-300">
+          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0 text-gray-200">
             <h3 className="text-xl font-bold">
               Torry Harris Integration Solutions
             </h3>
@@ -33,7 +33,7 @@ const WorkExperience = () => {
           {/* Right Side */}
           <div className="w-full md:w-1/2 pl-0 md:pl-8 text-center md:text-left">
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald-50 border border-emerald-200 rounded-full text-sm text-emerald-700 font-medium mb-2">
-              Tech Used: React,Typescript, AWS,Blazemeter
+              Tech Used: Docker, React, Typescript, AWS, Blazemeter
             </div>
             <ul className="list-disc list-inside text-gray-300 space-y-1">
               <li>Built Internal tool with ReactJs & NodeJs</li>
@@ -46,8 +46,8 @@ const WorkExperience = () => {
         {/* Experience Item 2 */}
         <div className="flex flex-col md:flex-row w-full max-w-4xl mb-12">
           {/* Left Side */}
-          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0">
-            <h3 className="text-xl font-bold">
+          <div className="w-full md:w-1/2 pr-0 md:pr-8 text-center md:text-right mb-4 md:mb-0 text-gray-200 ">
+            <h3 className="text-xl font-bold ">
               Torry Harris Integration Solutions
             </h3>
             <p className="text-gray-300">Associate Software Engineer</p>
