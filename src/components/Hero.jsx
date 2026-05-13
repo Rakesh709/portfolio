@@ -5,27 +5,27 @@ import {motion} from "motion/react"
 import {
     ArrowRight,
     Download,
-    Cloud,
-    Cpu,
-    Server,
-    Database,
+    MessageCircle,
 } from "lucide-react";
 import profilePic from "../assets/newProfile.png";
-import background from "../assets/bg.png";
 import {
     FaReact,
-    FaAws,
     FaDocker,
-    FaNodeJs,
     FaJs,
-    FaDatabase,
-    FaJenkins,
+    FaLinux,
+    FaGoogle,
+    FaAws,
+    FaJava,
 } from "react-icons/fa";
+import { SiKubernetes, SiTerraform, SiPostgresql } from "react-icons/si";
 
 const Hero = () => {
     const [typedText, setTypedText] = useState("");
     const [currentIndex, setCurrentIndex] = useState(0);
-    const fullText = "From Local To Web";
+    const [textIndex, setTextIndex] = useState(0);
+
+    const textOptions = ["MERN Stack Developer", "Cloud Architect", "DevOps Engineer"];
+    const fullText = textOptions[textIndex];
 
     useEffect(() => {
         if (currentIndex < fullText.length) {
@@ -34,22 +34,36 @@ const Hero = () => {
                 setCurrentIndex(currentIndex + 1);
             }, 80);
             return () => clearTimeout(timeout);
+        } else {
+            const timeout = setTimeout(() => {
+                setCurrentIndex(0);
+                setTypedText("");
+                setTextIndex((prev) => (prev + 1) % textOptions.length);
+            }, 2000);
+            return () => clearTimeout(timeout);
         }
-    }, [currentIndex]);
+    }, [currentIndex, fullText, textIndex]);
+
+    const scrollToContact = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
-        <section className=" flex mt-15 ">
+        <section className="flex mt-10">
             {/* Left Content */}
             <div className="flex-1 z-10">
                 <SparkleButton text="Available for freelance projects" />
 
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 leading-tight text-gray-100">
-                    Web & Infra<br />
-                    <span className="text-emerald-600">Engineer <span className="text-blue-500 text-7xl">🛠</span></span>
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight text-gray-100">
+                    Building Robust<br />
+                    <span className="text-emerald-500">Web & Cloud Solutions</span>
                 </h1>
 
-                <p className="text-xl md:text-2xl text-yellow-600 font-light mb-8">
-                    {typedText}
+                <p className="text-lg md:text-xl text-gray-400 font-medium mb-8 flex items-center gap-3">
+                    <span className="text-emerald-500">{typedText}</span>
                     <span className="animate-pulse">|</span>
                 </p>
 
@@ -60,10 +74,8 @@ const Hero = () => {
     text-white
     bg-gradient-to-br from-slate-800 to-slate-900
 
-    
     shadow-[0_4px_0_0_rgba(0,0,0,0.4)]
 
-    /* White glow */
     ring-1 ring-white/20
     shadow-white/20
 
@@ -86,58 +98,42 @@ const Hero = () => {
                     >
                         Download Resume <Download size={18} />
                     </a>
+
+                    <button
+                        onClick={scrollToContact}
+                        className="px-6 py-3 rounded-full font-medium text-emerald-400 bg-transparent border border-emerald-500/30 hover:bg-emerald-500/10 transition-all duration-200 flex items-center gap-2"
+                    >
+                        Let's Talk <MessageCircle size={18} />
+                    </button>
                 </div>
             </div>
 
             {/* Right Image + Floating Icons */}
             <div className="flex-1 relative flex justify-center md:justify-end">
-                
 
                 <div className="relative w-full max-w-sm md:max-w-md">
-
-                    {/* Background Grid (Behind) */}
-                        {/* <motion.img
-                            src={background}
-                                alt="grid"
-                                className="absolute bottom-0 left-0  opacity-80 z-0 w-600 h-115  rounded-2xl blur-m object-cover"
-                                initial={{ opacity: 0 }}
-                                animate={{ opacity: 1 }}
-                        /> */}
-
-
                         <motion.img
                            whileHover={{ scale: 1.05, y: -2 }}
                            whileTap={{ scale: 0.9, y: 1 }}
                            transition={{ type: "spring", stiffness: 700, damping: 20 }}
                            src={profilePic}
                            alt="Rakesh Kumar"
-                           className="relative z-10 rounded-lg w-full object-cover"
+                           className="relative rounded-lg w-full object-cover"
                         />
 
-                    {/* <motion.img
-                         whileHover={{scale:1.05,y:-2}}
-                         whileTap={{scale:0.9,y:1}}
-                        transition={{type:"spring",stiffness:700,damping:20}}
-                        src={profilePic}
-                        alt="Rakesh Kumar"
-                        className="rounded-lg w-full object-cover transform transition-transform"
-                    /> */}
-                    
-
-                    {/* Floating Tech Icons */}
-                    <FaReact className="absolute text-emerald-500 text-4xl animate-bounce-slow top-4 left-6" />
-                    <FaNodeJs className="absolute text-green-600 text-4xl animate-bounce-slow bottom-8 left-10" />
-                    <FaDocker className="absolute text-blue-500 text-4xl animate-bounce-slow top-10 right-10" />
-                    <FaAws className="absolute text-orange-500 text-4xl animate-bounce-slow bottom-6 right-6" />
-                    <FaJs className="absolute text-yellow-500  text-4xl animate-bounce-slow bottom-6 right-6 top-1/2 left-[-40px] hidden md:block" />
-                    <FaDatabase className="absolute text-purple-400 animate-bounce-slow text-4xl bottom-1/2 right-[-40px] hidden md:block" />
-                    {/* <FaJenkins  className="absolute text-black-400 animate-bounce-slow text-4xl top-1 left-50 " /> */}
+                    {/* Floating Tech Icons Circle - 9 icons evenly spaced, larger radius */}
+                    <FaReact className="absolute z-20 text-blue-400 text-4xl animate-bounce-slow" style={{ top: 'calc(42% - 225px)', left: '55%', transform: 'translate(-50%, -50%)' }} />
+                    <FaDocker className="absolute z-20 text-blue-500 text-4xl animate-bounce-slow" style={{ top: 'calc(50% - 190px)', left: 'calc(58% + 118px)', transform: 'translate(-50%, -50%)' }} />
+                    <SiKubernetes className="absolute z-20 text-blue-600 text-4xl animate-bounce-slow" style={{ top: 'calc(50% - 80px)', left: 'calc(50% + 212px)', transform: 'translate(-50%, -50%)' }} />
+                    <SiTerraform className="absolute z-20 text-purple-500 text-4xl animate-bounce-slow" style={{ top: 'calc(50% + 80px)', left: 'calc(50% + 212px)', transform: 'translate(-50%, -50%)' }} />
+                    <FaLinux className="absolute z-20 text-gray-300 text-4xl animate-bounce-slow" style={{ top: 'calc(50% + 225px)', left: '50%', transform: 'translate(-50%, -50%)' }} />
+                    <FaAws className="absolute z-20 text-orange-400 text-4xl animate-bounce-slow" style={{ top: 'calc(50% + 80px)', left: 'calc(50% - 212px)', transform: 'translate(-50%, -50%)' }} />
+                    <FaJava className="absolute z-20 text-orange-500 text-4xl animate-bounce-slow" style={{ top: 'calc(50% - 80px)', left: 'calc(50% - 212px)', transform: 'translate(-50%, -50%)' }} />
+                    <SiPostgresql className="absolute z-20 text-blue-500 text-4xl animate-bounce-slow" style={{ top: 'calc(50% - 190px)', left: 'calc(50% - 118px)', transform: 'translate(-50%, -50%)' }} />
+                    {/* <FaGoogle className="absolute z-20 text-red-400 text-4xl animate-bounce-slow" style={{ top: 'calc(40% - 158px)', left: 'calc(50% - 48px)', transform: 'translate(-50%, -50%)' }} /> */}
                 </div>
-                
-            </div>
 
-            {/* Soft background electric gradient */}
-            {/* <div className="absolute inset-0 bg-gradient-to-r from-transparent via-red-50/50 to-transparent blur-3xl pointer-events-none"></div> */}
+            </div>
 
             {/* Animations */}
             <style jsx>{`

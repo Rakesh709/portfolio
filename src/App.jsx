@@ -12,7 +12,7 @@ import Readmegenerator from "./page/Readmegenerator.jsx";
 
 function App() {
   return (
-    <div className='mx-4 sm:mx-[10%] '>
+    <div className='mx-4 sm:mx-[10%] pt-24'>
         <Navbar/>
         <Routes>
             <Route path='/' element={<Home/>}/>
