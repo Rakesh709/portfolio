@@ -1,7 +1,3 @@
-
-
-
-
 import React from "react";
 import { Coffee, Github, Linkedin, Mail, Code, Youtube } from "lucide-react";
 
@@ -19,22 +15,26 @@ const About = () => {
         </div>
 
         <h2 className="text-6xl md:text-3xl font-bold mb-6 text-gray-200">
-          I keep breaking my limits — not to prove I’m the best, but to become better than I was yesterday.
+          I keep breaking my limits — not to prove I’m the best, but to become
+          better than I was yesterday.
         </h2>
 
         <p className="text-lg md:text-xl text-[#909092] mb-4 leading-relaxed">
-          I'm a self tought full stack developer with over 4 years of experience building scalable web applications. I specialize in creating seamless user experiences backed by robust, efficient systems.
+          I'm a self tought full stack developer with over 4 years of experience
+          building scalable web applications. I specialize in creating seamless
+          user experiences backed by robust, efficient systems.
         </p>
 
         <p className="text-lg md:text-xl text-[#909092] leading-relaxed">
-          From idea to production, I’ve helped bring products to life, always focusing on clean code, performance, and user satisfaction.
+          From idea to production, I’ve helped bring products to life, always
+          focusing on clean code, performance, and user satisfaction.
         </p>
 
         {/* Social Links */}
         <div className="flex justify-center md:justify-start gap-4 mt-8">
           <a
-  href="https://github.com/Rakesh709"
-  className="
+            href="https://github.com/Rakesh709"
+            className="
     w-12 h-12
     rounded-full
     flex items-center justify-center
@@ -55,10 +55,10 @@ const About = () => {
 
     transition-all duration-200
   "
-  aria-label="GitHub"
->
-  <Github size={20} />
-</a>
+            aria-label="GitHub"
+          >
+            <Github size={20} />
+          </a>
 
           <a
             href="https://www.linkedin.com/in/rakesh-kumar-6b3228145/"

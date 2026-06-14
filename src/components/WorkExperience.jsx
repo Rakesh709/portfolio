@@ -7,6 +7,7 @@ const WorkExperience = () => {
     
     <div id="work" className="mt-20 mb-20">
       {/* <hr className="h-px my-8 bg-slate-200 border-0 dark:bg-slate-700" /> */}
+      <div className="max-w-7xl mx-auto text-center md:text-left">
       <div  className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4 ">
         <BriefcaseBusiness size={20} />
         <span>Work Experience</span>
@@ -69,6 +70,7 @@ const WorkExperience = () => {
             </ul>
           </div>
         </div>
+      </div>
       </div>
       </div>
     
