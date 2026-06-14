@@ -8,7 +8,7 @@ const Footer = () => {
         
         {/* Left: Logo / Name */}
         <div className="text-2xl font-bold flex items-center gap-2 text-emerald-500">
-          <span>Rakesh Kumar</span>
+          <span>Rakesh</span>
         </div>
 
         {/* Center: Tagline */}
