@@ -31,9 +31,16 @@ const TechStack = () => {
   ));
 
   return (
-    <section  id="tech" className="mt-25 ">
+    // <section  id="tech" className="mt-25 ">
+    <section  id="tech" className="mt-25 mb-2 ">
       {/* Section Title */}
-      <div className="flex items-center gap-2 mb-6  text-emerald-600 font-medium">
+      {/* <div className="flex items-center gap-2 mb-6  text-emerald-600 font-medium">
+        <Cpu size={20} />
+        <span>Technology</span>
+      </div> */}
+
+      <div className="max-w-7xl mx-auto text-center md:text-left">
+      <div className="inline-flex items-center gap-2 text-emerald-600 font-medium mb-4">
         <Cpu size={20} />
         <span>Technology</span>
       </div>
@@ -93,6 +100,7 @@ const TechStack = () => {
   </div>
 </div>
 
+      </div>
       </div>
     </section>
   );
