@@ -43,7 +43,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex items-center gap-2 text-lg font-bold">
             <Terminal className="text-emerald-400" size={22} />
-            <span className='text-gray-200'>Rakesh Kumar</span>
+            <span className='text-gray-200'>Rakesh</span>
           </div>
 
           {/* Desktop Nav */}
